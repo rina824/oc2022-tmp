@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    #container {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/panolens@0.11.0/build/panolens.min.js"></script>
+  
+
+  <div id="container"></div>
+
+
+  <script>
+    var parm = location.search.substring(1).split('&');
+    var val = parm[0].split('=');
+    var plc = val[1];
+
+
+    var panorama, viewer, container, infospot, infospot2;
+    container = document.querySelector('#container');
+    // var URL_par = "https://sc.coop.nagoya-u.ac.jp/nusc/oc2021/img/panorama/" + plc +".jpg";
+    var URL_par = "https://kato1999.github.io/OCweb2021/img/panorama/" + plc +".jpg";
+
+    panorama = new PANOLENS.ImagePanorama(URL_par);
+    panorama.add(infospot , infospot2);
+    viewer = new PANOLENS.Viewer({
+        container: container
+    });
+    viewer.add(panorama);
+  </script>
+
+</body>
+
+</html>
