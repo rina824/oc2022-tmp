@@ -1,5 +1,6 @@
 # Open Campus Web 2022
-**Last update: May 13th, 2022 00:48 by Yoshida**
+**Last update: June 13th, 2022 23:04 by Yoshida**  
+**Note that this repository is for temporary usage!!**
 ## プロフェクトの概要
 このリポジトリは，「Open Campus Web 2022」をするためのものです．IT班内で共同開発することを想定して作成しています．
 
