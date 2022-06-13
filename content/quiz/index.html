@@ -7,31 +7,33 @@
     <meta name="keywords" content="オープンキャンパス,Open Campus,学生企画,OC,名大,新入生,名古屋大学,Me~dia,Me-dia,学生委員会,SC">
     <!-- スタイルシートはここから -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/content.css">
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <!-- 外部ファイルの読み込み -->
-    <script type="text/javascript">
-        $(function() {
-        // header.htmlをid属性「header」という名前で読み込むように指定
-        $("#header").load("/component/header.html");
-        $("#page-top").load("/component/page-top.html");
-        $("#footer").load("/component/footer.html");
-        });
-    </script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/content.css">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-taget="#navbar">
     <header>
         <div id="header">
-            <!-- header.html が読み込まれる -->
+        <!-- header の読み込み -->
+        <script type="module">
+            import {make_header} from "../../component/header.js";
+            const path_from_file_to_root_in_header = "../../";
+            const header = document.body;
+            header.insertAdjacentHTML('beforebegin', make_header(path_from_file_to_root_in_header))
+            </script>
         </div>
     </header>
     
     <!-- トップ画像 -->
-    <div id="page-top">
-        <!-- page-top.html が読み込まれる -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container d-flex d-flex align-items-center">
+            <div class="col-md-8 mx-auto card p-5" id="top-doc">
+                <h1 class="display-4 mx-auto text-center title">クイズ</h1>
+                <h3 class="mx-auto text-center mt-3 date">Open Campus学生企画</h3>
+            </div>
+        </div>
     </div>
 
     <!-- 説明文 -->
@@ -64,7 +66,7 @@
         <!-- ###クイズ参加ボタン公開中### -->
         <div class="mb-5">
             <a href="https://youtu.be/mVNe3Pe_Yjs" target="brank">
-                <img src="/img/quiz-button/quizButtonImgActive.jpg" alt="クイズ参加ボタン" class="quizBottunImg">
+                <img src="../../img/quiz-button/quizButtonImgActive.jpg" alt="クイズ参加ボタン" class="quizBottunImg">
             </a>
         </div>
         <!-- ###解説動画ボタン準備中###
@@ -76,15 +78,21 @@
         <!-- ###解説動画ボタン公開中### -->
         <div class="mb-5">
             <a href="https://www.youtube.com/watch?v=jJDC1T61c_A" target="brank">
-                <img src="/img/quiz-button/answerButtonImgActive.jpg" alt="解説動画ボタン" class="quizBottunImg">
+                <img src="../../img/quiz-button/answerButtonImgActive.jpg" alt="解説動画ボタン" class="quizBottunImg">
             </a>
         </div>
     </section>
-    <div>
-        <p><center><a href="/index.html">TOPに戻る</a></center></p>
+    <div class="text-center mb-2">
+        <a href="../../index.html">TOPに戻る</a>
     </div>
-    <div id="footer">
-        <!-- footer.html が読み込まれる -->
+    <div>
+        <!-- footer の読み込み -->
+        <script type="module">
+        import {make_footer} from "../../component/footer.js";
+        const path_from_file_to_root_in_footer = "../../";
+        const footer = document.body;
+        footer.insertAdjacentHTML('beforebegin', make_footer(path_from_file_to_root_in_footer));
+        </script>
     </div>
 </body>
 </html>
