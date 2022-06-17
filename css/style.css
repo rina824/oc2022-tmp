@@ -1,0 +1,446 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+.no-gutter > [class*='col-'] {
+	padding-right: 0;
+	padding-left: 0;
+}
+.bg-lightgreen {
+	background-color: #16ce65;
+}
+
+.header-logo {
+	width: 100px;
+	max-width: 20%;
+}
+
+.navbar-nav .nav-item .nav-link {
+	font-size: 20px;
+	color: whitesmoke;
+	font-weight: bold;
+}
+
+/* メニュー部分のデザイン */
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	background-color: #2fc552;
+	color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+	content: ">"
+}
+
+.detail_content {
+	padding-top: 10px;
+}
+
+.detail_content > p {
+	width: 100%;
+	border: 1px solid #2fc552;
+	margin: 0 auto;
+	font-size: 1.4em;
+	color: rgb(6, 173, 0);
+	background-color: rgb(230, 255, 213);
+	padding: 15px 6px;
+	margin: 0;
+	box-shadow: 3px 3px 4px black;
+}
+
+.detail_content > p > a {
+	color: rgb(6, 173, 0);
+	font-weight: bolder;
+}
+
+.no_link{
+	pointer-events:none;
+}
+
+.detail_content p a {
+	display: block;
+}
+
+/* 豊講部分のデザイン */
+.jumbotron {
+	margin: 10px;
+	background-image: url('../img/common/sc-2022.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 90vh;
+}
+
+#top-doc {
+	background-color: rgba(247, 255, 246, 0.85);
+}
+
+.title {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: rgb(255, 153, 0);
+}
+
+.subtitle {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 3.0rem;
+	color: rgb(255, 153, 0);
+}
+
+.date {
+	color: rgb(9, 73, 0);
+	font-family: 'Anton', sans-serif;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 30px;
+}
+
+/*========== 共通して使うもの ==========*/
+/* デフォルトの li デザインと同じもの (緑色のボックス) */
+.light-green-box {
+	border-left: solid 8px #8dcf67;
+	background-color: whitesmoke;
+	line-height: 1.5;
+	border-radius: 0 15px 15px 0;
+	padding: 0.5em;
+	width: 95%;
+	margin-bottom: 15px;
+	/* margin-left: 10px; */
+}
+
+/* 普通の ul デザイン */
+.normal-ul {
+	background: none;
+	line-height: 1.5;
+}
+
+/* 普通の li デザイン */
+.normal-ul li {
+	border-left: none!important;
+	list-style-type: disc!important;
+}
+
+/* class内のpタグをインデント */
+.making-p-elements-indent {
+	text-indent: 0.5em;
+}
+/*===================================*/
+
+/* コンテンツ名称の緑色部分 */
+.heading {
+	border-left: 6px solid rgb(6, 173, 0);
+	padding: 0 0 0 10px;
+}
+
+/* トップページ SNS ボックス */
+.sns-box {
+	border: 1px solid #d2d2d2;	/*枠線の幅、線種、色*/
+	padding: 10px;			/*ボックス内の余白*/
+	/* margin-bottom: 20px;	ボックスの下に空けるスペース */
+	background: linear-gradient(#fff, #eaeaea);	/*グラデーション*/
+	box-shadow: 0px 0px 0px 1px #FFF inset;		/*内側への影を右・下・ぼかし幅・距離・色を設定*/
+	width: 45%;
+	max-width: 300px;
+	float: right;
+}
+
+.sns-box h6 {
+	font-weight: bold;
+	background: rgb(238, 238, 238);
+	border-bottom: 1px solid rgb(210, 210, 210);
+	border-top: 5px solid #28a745;
+}
+
+/* トップページコンテンツ画像 */
+.ContentsImgContainerTop {
+	text-align: center;
+}
+.ContentsImgContainerTop img {
+	height: 75%;
+}
+
+/* 冊子ページ */
+.book-p {
+	margin-bottom: 40px;
+}
+
+.book-subtitle {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.book-box {
+	max-width: 90%;
+}
+
+.book-box div {
+	display: inline-block;
+}
+
+.book-box p {
+	margin: 5pt 0pt 30pt 0pt;
+}
+
+.school {
+	font-weight: bold;
+	font-size: x-large;
+	padding-right: 5%;
+}
+
+.my-exam-QA h3 {
+	font-weight: bold;
+	font-size: 22px;
+	padding-right: 0;
+}
+
+.comment {
+	font-size: large;
+	font-weight: 500;
+}
+
+/* 対談リンク */
+.talk-link {
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+}
+
+/* リンク部分のデザイン */
+.card a {
+	color: rgb(10, 10, 10);
+	text-decoration: none;
+}
+
+.card a {
+	transition:all .5s ease;
+}
+
+.caution {
+	font-size: 10px;
+}
+
+.situation {
+	color: red;
+	font-size: 1.1em;
+}
+
+.situation2 {
+	color: rgb(173, 113, 0);
+	font-size: 1.1em;
+}
+
+/* .card:hover a{
+	background-color:rgb(218, 255, 213);
+} */
+
+.form {
+	width:640px;
+	height:450px;
+	max-width: 100%;
+	border: 0px;
+}
+
+.footer-copyright {
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	padding-top:10px;
+	background-color:rgb(6, 173, 0);
+	color: white;
+}
+
+.footer-logo {
+	height: 50px;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+}
+
+/* twitter */
+.twitter {
+	margin: 50px 50px;
+}
+
+/* 大デバイス（デスクトップ, 768px 以上）
+============================================== */
+@media screen and (min-width: 767.98px) {
+	details {
+		text-align: center;
+		height: 50px;
+	}
+
+	.title {
+		font-size: 50px;
+	}
+
+	.date {
+		font-size: 40px;
+	}
+
+	.nav-item {
+		margin: 0 auto;
+		border-left: solid 1px whitesmoke;
+		border-right: solid 1px whitesmoke;
+	}
+	
+	.nav-item + .nav-item {
+		border-left:none;
+	}
+
+	.quizBottunImg {
+		width: 80%;
+	}
+
+	/* トップページ生協バナー部分 */
+	.coopInfo {
+		display: flex;
+		padding: 0 50px;
+	}
+	
+	.coopInfo a {
+		flex-basis: 50%;
+	}
+
+	/* クイズ景品ページ画像 */
+	.imgContainerInPresent {
+		display: flex;
+		margin: 20px 10px;
+		text-align: center;
+	}
+	
+	.imgBox {
+		flex-basis: 30%;
+	}
+} /* END */
+
+/* 小デバイス（タブレット, 768px 未満）
+============================================== */
+@media screen and (max-width: 767.98px) {
+	.gnav-item {
+		display: block;
+		width: 100%;
+		border: none;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+
+	.gnav-item+ .gnav-item {
+		border: none;
+	}
+
+	table th, table td {
+		padding: .25rem !important;
+	}
+
+	table th:first-child {
+		width: 25%;
+	}
+
+	.quizBottunImg {
+		width: 80%;
+	}
+
+	/* トップページ生協バナー部分 */
+	.coopInfo {
+		text-align: center;
+	}
+	
+	.coopInfo img {
+		margin-bottom: 20px;
+	}
+
+	/* クイズ景品ページ画像 */
+	.imgContainerInPresent {
+		text-align: center;
+	}
+
+	.imgBox {
+		flex-basis: 30%;
+		margin-top: 30px;;
+	}
+} /* END */
+
+/* 大デバイス（縦向きモバイル, 576px 以上 デスクトップ, 992px 未満）
+============================================== */
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+	details{
+		text-align: center;
+		height: 50px;
+	}
+	.quizBottunImg {
+		width: 80%;
+	}
+
+	/* トップページ生協バナー部分 */
+	.coopInfo {
+		display: flex;
+		padding: 0 50px;
+	}
+	
+	.coopInfo a {
+		flex-basis: 50%;
+	}
+
+	/* クイズ景品ページ画像 */
+	.imgContainerInPresent {
+		display: flex;
+	}
+
+	.imgBox {
+		flex-basis: 30%;
+	}
+
+	/* クイズ景品ページ画像 */
+	.imgContainerInPresent {
+		text-align: center;
+	}
+
+	.imgBox {
+		flex-basis: 30%;
+		margin-top: 30px;
+	}
+} /* END */
+
+/* 大デバイス（縦向きモバイル, 576px 以上）
+============================================== */
+@media screen and (min-width: 576px) {
+	.quizBottunImg {
+		width:50%
+	}
+	/* トップページ生協バナー部分 */
+	.coopInfo {
+		display: flex;
+		padding: 0 50px;
+	}
+
+	/* スコープ動画埋め込み部分 */
+	.scope-movie {
+		height: 280px;
+		width: 500px;
+	}
+
+	.coopInfo a {
+		flex-basis: 50%;
+	}
+
+	/* クイズ景品ページ画像 */
+	.imgContainerInPresent {
+		text-align: center;
+	}
+
+	.imgBox {
+		flex-basis: 30%;
+		margin-top: 30px;
+	}
+} /* END */

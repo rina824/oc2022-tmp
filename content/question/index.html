@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>オープンキャンパス2022 学生企画 質問コーナー</title>
+    <meta name="description" content="名古屋大学オープンキャンパス2022学生企画">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="オープンキャンパス,Open Campus,学生企画,OC,名大,新入生,名古屋大学,Me~dia,Me-dia,学生委員会,SC">
+    <!-- スタイルシートはここから -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/content.css">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+</head>
+
+<body data-spy="scroll" data-taget="#navbar">
+    <header>
+        <!-- header の読み込み -->
+        <script type="module">
+        import {make_header} from "../../component/header.js";
+        const path_from_file_to_root_in_header = "../../";
+        const header = document.body;
+        header.insertAdjacentHTML('beforebegin', make_header(path_from_file_to_root_in_header))
+        </script>
+    </header>
+
+    <!-- トップ画像 -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container d-flex d-flex align-items-center">
+            <div class="col-md-8 mx-auto card p-5" id="top-doc">
+                <h1 class="display-4 mx-auto text-center title">質問コーナー</h1>
+                <h3 class="mx-auto text-center mt-3 date">Open Campus学生企画</h3>
+            </div>
+        </div>
+    </div>
+    <!-- 学生企画説明 -->
+    <section class="container py-5" id="sec1">
+        <div class="mb-1">
+            <h2 class="heading d-inline-block mr-2">質問コーナー</h2>
+        </div>
+        <p class="text-secondary mb-0">皆さんが大学生活や受験勉強など、疑問に思っていることを質問フォームに入力し、送信してください。皆さんからの質問に現役名大生がお答えします！皆さんの疑問を少しでも解消できたらうれしいです。質問お待ちしています!!</p>
+        <p class="text-secondary mb-5">※ 回答は学生が行います。十分に回答できない場合もありますのでご了承ください。</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="mb-3 card shadow-sm">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVPVOdAec33h10b8n7_5Lg-ouNmd05fK9P9f1z1YnlfxBWiQ/viewform" target="brank">
+                            <div class="card-body pt-3">
+                                <h3 class="mb-2">質問募集</h3>
+                                <p class="text-secondary no_link mb-1">皆さんからの質問に現役名大生が答えます！気になることを質問してみてください！</p>
+                                <p class="text-danger">&#8251 質問を募集中です！</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="mb-0 card shadow-sm">
+                            <div class="card-body pt-3">
+                                <h3 class="mb-2">質問への回答</h3>
+                                <p class="text-secondary mb-1">皆さんから寄せられた質問に対する回答を掲載しています。あなたが知りたい情報が載っているかも？</p>
+                                <p class="text-danger">&#8251 8月に公開します。公開までお待ちください！</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mt-0">
+        <p class="text-center mb-4"><a href="../../index.html">TOPに戻る</a></p>
+    </div>
+    <div>
+        <!-- footer の読み込み -->
+        <script type="module">
+        import {make_footer} from "../../component/footer.js";
+        const path_from_file_to_root_in_footer = "../../";
+        const footer = document.body;
+        footer.insertAdjacentHTML('afterend', make_footer(path_from_file_to_root_in_footer));
+        </script>
+    </div>
+</body>
+</html>

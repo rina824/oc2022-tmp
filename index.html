@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112746834-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-112746834-8');
+    </script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <meta charset="UTF-8">
+    <title>オープンキャンパス2022 学生企画 トップページ</title>
+    <meta name="description" content="名古屋大学オープンキャンパス2022学生企画">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="オープンキャンパス,Open Campus,学生企画,OC,名大,新入生,名古屋大学,Me~dia,Me-dia,学生委員会,SC">
+    <!-- スタイルシートはここから -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-spy="scroll" data-taget="#navbar">
+    <header>
+        <!-- ヘッダーの読み込み -->
+        <script type="module">
+            import {make_header} from "./component/header.js";
+            const path_from_file_to_root_in_header = "./";
+            const header = document.body;
+            header.insertAdjacentHTML('beforebegin', make_header(path_from_file_to_root_in_header))
+        </script>
+    </header>
+    <!-- トップ画像 -->
+    <div class="jumbotron jumbotron-fluid mb-0 d-flex align-items-center">
+        <div class="container d-flex  d-flex align-items-center">
+            <div class="col-md-7 mx-auto card p-5" id="top-doc">
+                <h2 class="display-5 mx-auto text-center subtitle">Open Campus 2022</h2>
+                <h1 class="display-4 mx-auto text-center title">学生企画</h1>
+                <h3 class="mx-auto text-center mt-2 date">オンライン開催</h3>
+                <h3 class="mx-auto text-center mt-1 date">Date：8/9,10,12</h3>
+                <h3 class="mx-auto text-center mt-1 date">名古屋大学</h3>
+            </div>
+        </div>
+    </div>
+    <!-- 学生企画説明 -->
+    <section class="container py-5" id="sec1">
+        <div class="mb-3">
+            <h2 class="heading d-inline-block mr-2">学生企画へようこそ！</h2>
+        </div>
+        <p class="text-secondary">
+            本サイトは学生ならではの視点から「名大のリアル」をお伝えし、将来の大学生活を想像する上で役立ててほしいとの想いで作成されました。
+            名大生はどのような生活を送っているのでしょうか。大学受験はどう乗り越えたのでしょうか。皆さんの気になる疑問にお答えします。
+            実際に名大へ行くことができない方にも、大学の雰囲気をお伝えできれば幸いです！ 是非以下のコンテンツをのぞいてみてください♪
+        </p>
+    </section>
+    <hr class="my-0">
+    <!-- 企画へのリンク -->
+    <section class="py-5 bg-light" id="sec2">
+        <div class="container">
+            <div class="mb-3">
+                <h2 class="heading d-inline-block mr-2">各企画の紹介</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="mb-3 card shadow-sm">
+                        <div class="px-3 pt-3 mb-3"><img src="./img/top/meddy-for-talk-menu-gray.jpg" alt="対談" class="w-100"></div>
+                        <div class="card-body pt-0">
+                            <h3 class="mb-3">対談</h3>
+                            <p class="card-text mb-2">直接、現役名大生と話すことができる機会は少ないのではないでしょうか？お気軽にご参加ください！</p>
+                            <p class="text-danger">&#8251 7月上旬に公開します。しばらくお待ちください。</p>
+                            <!-- <span class="situation">現在予約を受け付けています！</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="mb-3 card shadow-sm">
+                        <a href="./content/question/" tabindex="-1">
+                            <div class="pt-5 px-3 pb-5"><img src="./img/top/meddy-for-question-menu.jpg" alt="質問コーナー" class="w-100"></div>
+                            <div class="card-body pt-0">
+                                <h3 class="mb-3">質問コーナー</h3>
+                                <p class="card-text mb-1">
+                                    お話するほどではないけど、ちょっと気になることがある……そんな方は、アンケートフォームで現役名大生に質問してみましょう！
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="mb-3 card shadow-sm">
+                        <div class="pt-3 px-3 pb-4"><img src="./img/top/meddy-for-movie-menu-gray.jpg" alt="May I ask 名大生 something?" class="w-100"></div>
+                        <div class="card-body pt-0">
+                            <h3 class="mb-3">May I ask 名大生 something?</h3>
+                            <p class="card-text mb-2">「質問してもいいですか？」そんな気持ちをタイトルに込めました。ぜひ一度ご覧ください。</p>
+                            <p class="text-danger">&#8251 7月中旬に公開します。しばらくお待ちください。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="mb-3 card shadow-sm">
+                        <div class="px-3 pt-3 pb-4 ContentsImgContainerTop"><img src="./img/top/meddy-for-information-menu-gray.jpg" alt="資料室"></div>
+                        <div class="card-body pt-0">
+                            <h3 class="mb-3">資料室</h3>
+                            <p class="card-text">名大生の声を盛り込んだWeb記事や、実際の名大の様子がわかる動画など、名大を詳しく知ることができるコンテンツを掲載しています！</p>
+                            <p class="text-danger">&#8251 7月中旬に公開します。しばらくお待ちください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.container-->
+    </section>
+    <hr class="my-0">
+    <!-- About us -->
+    <section class="bg-light py-5" id="sec2">
+        <div class="container">
+            <div class="mb-3">
+                <h2 class="heading d-inline-block mr-2">学生委員会紹介</h2>
+            </div>
+            <p class="text-secondary">
+                名古屋大学 Open Campus 2022 学生企画は名古屋大学生協学生委員会が企画・運営を行っています！
+                その他、新入生歓迎企画や学内広報誌作成など名大生の暮らしをより良くするために幅広く活動しています。
+                詳しくは<a href="https://sc.coop.nagoya-u.ac.jp/" target="brank" >公式ホームページ</a>をご覧ください。
+            </p>
+            <p class="text-secondary">
+                <a href="https://twitter.com/meddy_club" target="_blank">公式Twitter</a>、<a href="https://www.instagram.com/meddy_club/" target="_blank">Instagram</a>もチェックしてくださいね☆
+            </p>
+        </div>
+    </section>
+    <!-- CoopInfo -->
+    <hr class="my-0">
+    <section class="container py-5" id="sec1">
+        <h2 class="heading d-inline-block mr-2 mb-3">名古屋大学生協からのお知らせ</h2>
+        <p class="text-secondary mb-3">名古屋大学の受験・入学に関するお役立ち情報を大学生協のホームページで公開しています。以下のリンクからご覧ください。</p>
+        <div>
+            <h5 class="text-secondary">1. 大学進学ガイドブック</h5>
+            <p class="text-secondary mb-3">大学入学までのこと、大学入学してからのことについて、受験生とその保護者が疑問に思うことをまとめたサイトです。ぜひ親子でご覧いただき、話し合ってみてください。</p>
+            <h5 class="text-secondary">2. 名古屋大学生協 受験生・新入生応援サイト</h5>
+            <p class="text-secondary mb-1">名古屋大学消費生活協同組合 (名大生協) は、名古屋大学受験生・保護者向けに「住まい紹介｣、｢入学準備｣、｢教科書・教材申込」などに関する情報を提供しております。また、受験時・合格発表後に入学準備に関する説明会・相談会も計画しています。ぜひこちらのチェックもお願いいたします。</p>
+            <p class="text-secondary mb-5">※現時点での掲載情報は2022年度入学者向けになっています。今後、随時2023年向けの情報に更新していきます。</p>
+            <div class="coopInfo">
+                <a href="https://www.univcoop.or.jp/parents/guide-singaku/index.html" target="brank">
+                    <img src="./img/coop-info/CoopBannerOnGuidebook.jpg">
+                </a>
+                <a href="https://www.nucoop.jp/fresh/" target="brank">
+                    <img src="./img/coop-info/CoopBannerOnSupport.jpg">
+                </a>
+            </div>
+        </div>
+    </section>
+    <div>
+        <section class="sns-box mt-4 mb-4 mr-4 ml-3 text-center">
+            <h6 class="pt-1 pb-1 tex">SNS/リンク</h6>
+            <span class="mt-3 mr-2"><a href="https://twitter.com/meddy_club" target="_blank"><img src="./img/top/Twitter-icon.png" alt="Twitter" width="50px"></a></span>
+            <span class="mt-3 ml-2"><a href="https://www.instagram.com/meddy_club/" target="_blank"><img src="./img/top/Instagram-icon.png" alt="Instagram" width="50px"></a></span>
+        </section>
+        <!-- footer の読み込み -->
+        <script type="module">
+            import {make_footer} from "./component/footer.js";
+            const path_from_file_to_root_in_footer = "./";
+            const footer = document.body;
+            footer.insertAdjacentHTML('afterend', make_footer(path_from_file_to_root_in_footer));
+        </script>
+    </div>
+</body>
+</html>
