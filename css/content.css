@@ -1,0 +1,271 @@
+.jumbotron {
+  background-image: url('../img/top/auditorium-for-page-top.png');
+  min-height: 50px;
+}
+
+/* ツアーパノラマ */
+.map_all {
+  display:block;
+  margin: 10px 1uto;
+  width: 95%;
+  max-width: 800px;
+}
+
+.map {
+  display: block;
+  /* margin: 10px auto; */
+  margin-bottom: 20px;
+  margin-top: 15px;
+  width: 90%;
+  max-width:400px;
+}
+
+/* 対談回答ページ */
+.new {
+  font-size: 1.3em;
+  color: red;
+}
+
+/*対談スケジュール*/
+.top-table {
+  border: 2px solid #1fa756;
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.top-table th {
+  border: 2px solid #1fa756;
+  border: 1px solid ;
+  background-color: rgba(229, 243, 240, 0.856);
+  padding: 5px;
+}
+.top-table td {
+  border: 1px solid ;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.top-table li {
+  list-style-type: square
+}
+.cp_hr01 {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #a9a9a9;
+}
+/*ここまで対談スケジュール*/
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	font-family: sans-serif;
+	-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cp_qa .question {
+	margin-bottom: 0.5em;
+	padding: 0.2em 0.5em 0.5em 2em;
+	border-radius: 0.2em;
+	background: #8dcf67;
+}
+
+.cp_qa .answer {
+	margin-bottom: 1em;
+	margin-left: 0;
+	padding: 0.5em 1em 1.5em 3em;
+}
+
+.cp_qa .question::before,.cp_qa .answer::before {
+	font-size: 1.5em;
+	color: #ffffff;
+}
+
+.cp_qa .question::before {
+	margin: 0.3em 0.3em 0 -1em;
+	content: 'Q';
+}
+
+.cp_qa .answer::before {
+	margin: 0 0.5em 0 -2em;
+	padding: 0.2em 0.4em;
+	content: 'A';
+	border-radius: 0.2em;
+	background: #ffb74d;
+}
+
+#sec1 ul, #sec1 ol, .sec ul, .sec ol {
+  padding: 0;
+  margin-left: 30px;
+}
+
+#sec1 ul li, #sec1 ol li, .sec ul li, .sec ol li {
+  color: black;
+  border-left: solid 8px #8dcf67;/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  list-style-type: none;
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+#sec1 ul li a, .sec ul li a{
+  text-decoration: none;
+  /* color:black; */
+  font-size: 18px;
+}
+
+.sec ul li{
+  display: inline-block;
+  background: rgb(230, 230, 230);/*背景色*/
+}
+
+/* 冊子の表 */
+table.contents {
+  width: 95%;
+  font-size: large;
+  border: solid 1.5px rgb(167, 163, 163);
+  margin-top: 50px;
+}
+
+table.contents td {
+  border: solid 1px rgb(167, 163, 163);
+  padding: 10px 10px 10px 15px;
+  height: 70%;
+}
+
+/* クイズの問題 */
+#choice, #box1 {
+  width: 100%;
+  text-align: center;
+}
+
+#choice {
+  margin-bottom: 80px;
+}
+
+.btn,#box2 {
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  /* background-color: red; */
+  transition: .4s;
+}
+
+#box2 {
+  margin: 30px auto;
+  margin-top: 50px;
+  background-color:rgb(218, 218, 218);
+  background-size: 100% auto;
+}
+
+#category {
+  font-size: 15px;
+}
+
+#problem {
+  font-size: 30px;
+  margin: 15px auto;
+  text-align: left;
+}
+  
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+#choice1{border: 2px solid red;}
+#choice1:hover {background-color: red;   color: white;}
+
+#choice2{border: 2px solid blue;}
+#choice2:hover {background-color: blue;   color: white;}
+
+#choice3{border: 2px solid orange;}
+#choice3:hover {background-color: orange;   color: white;}
+
+#choice4{border: 2px solid green;}
+#choice4:hover {background-color: green;   color: white;}
+
+/* クイズ解答 */
+.explain{
+  min-height: 90vh;
+}
+
+.correct_fig{
+  font-size: 200px;
+  font-weight: bold;
+  color: red;
+  line-height: 220px;
+  margin-bottom: -30px;
+}
+
+.correct_word ,.uncorrect_word{
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  line-height: 100px;
+  margin-bottom: 20px;
+  /* margin-bottom: -20px; */
+}
+
+.uncorrect_fig{
+  font-size: 250px;
+  color: blue;
+  line-height: 220px;
+  margin-bottom: -30px;
+}
+
+.uncorrect_word{
+  color: blue;
+}
+
+.link{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.back_quiz {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  border: 2px solid rgb(83, 83, 83);
+  transition: .4s;
+}
+
+.back_quiz:hover{
+  background-color: rgb(83, 83, 83);
+  text-decoration: none;
+  color: white;
+}
+
+/* 情報の宝庫画像 */
+img.photo {
+  max-width: 400px;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.photo_pos{
+  text-align: left;
+}
+
+img.pic {
+  max-width: 50%;
+  margin: 10px 50px 50px 10px;
+}
+
+.info{
+  min-height: 80vh;
+}
